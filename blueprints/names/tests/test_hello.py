@@ -4,7 +4,7 @@ import pytest
 
 @pytest.fixture()
 def resp(client):
-    response = client.get(url_for('hello_name', name='Renzo'))
+    response = client.get(url_for('names.hello'))
     return response
 
 
@@ -13,4 +13,4 @@ def test_hello_status_code(resp):
 
 
 def test_hello_status_msg(resp):
-    assert 'Renzo' in resp.get_data(as_text=True)
+    assert 'madruga' in resp.get_data(as_text=True)
