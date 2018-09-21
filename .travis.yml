@@ -5,4 +5,4 @@ install:
   - pip install -q -r requirements.txt
 script:
   - pytest .
-  - flake8
+  - flake8 .
