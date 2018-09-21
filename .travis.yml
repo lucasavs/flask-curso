@@ -1,0 +1,7 @@
+language: pythom
+python:
+  - 3.6.4
+install:
+  - pip install -q -r requirements.txt
+script:
+  - pytest .
