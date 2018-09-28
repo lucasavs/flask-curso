@@ -5,4 +5,5 @@ install:
   - pip install -q -r requirements.txt
 script:
   - pytest .
+  - cp contrib/.env-sample .env
   - flake8 .
